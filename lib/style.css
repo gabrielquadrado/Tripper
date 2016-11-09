@@ -39,7 +39,7 @@ h2 {
 	font-size: 14px;
 }
 #btn-login, #btn-register{
-	background-color: #ff5353;
+	background-color: #ff5353!important;
 }
 .login-box-footer a{
 	color: white;
