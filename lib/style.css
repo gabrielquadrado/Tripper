@@ -1,14 +1,5 @@
-html, body {
-    height: 100%;
-}
-html {
-    display: table;
-    margin: auto;
-}
 body {
 	background-color: #00e676;
-    display: table-cell;
-    vertical-align: middle;
 }
 h2 {
     margin: 0px;
@@ -19,7 +10,14 @@ h2 {
 }
 .login-box{
 	width: 500px;
+	height: 400px;
 	text-align: center;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 .login-box-header{
 	background-color: white;
