@@ -8,6 +8,7 @@ angular.module('app').controller('loginCtrl', function($rootScope, $scope, $loca
 	   	$scope.login = function(){
 	   		firebase.auth().signInWithEmailAndPassword($scope.email, $scope.password).catch(function(error) {
 	   		  Materialize.toast(error.message, 4000,'');
+	   		  firebase.auth().signOut().then(function() {});
 	   		}).then(function(){
 	   			firebase.auth().onAuthStateChanged(function(user) {
 				if(user){
@@ -29,6 +30,7 @@ angular.module('app').controller('loginCtrl', function($rootScope, $scope, $loca
 	   		$('.login-box-content #btn-register').on('click',function(){
 	   			firebase.auth().createUserWithEmailAndPassword($scope.email, $scope.password).catch(function(error) {
 	   				Materialize.toast(error.message, 4000,'');
+	   				firebase.auth().signOut().then(function() {});
 	   			}).then(function(){
 	   				firebase.auth().onAuthStateChanged(function(user) {
 	   					if(user){

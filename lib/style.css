@@ -1,5 +1,5 @@
 body {
-	background-color: #00e676;
+	background-color: #aad8b0;
 }
 h2 {
     margin: 0px;
@@ -38,6 +38,9 @@ h2 {
 	margin-top: 10px;
 	font-size: 14px;
 }
+#btn-login{
+	background-color: #ff5353;
+}
 .login-box-footer a{
 	color: white;
 }
@@ -45,8 +48,8 @@ h2 {
 	margin-right: 5px;
 }
 .input:focus{
-	border-bottom: 1px solid #00e676!important;
-	box-shadow: 0 1px 0 0 #00e676!important;
+	border-bottom: 1px solid #aad8b0!important;
+	box-shadow: 0 1px 0 0 #aad8b0!important;
 }
 #world-map{
 	position: absolute;
