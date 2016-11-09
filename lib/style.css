@@ -38,7 +38,7 @@ h2 {
 	margin-top: 10px;
 	font-size: 14px;
 }
-#btn-login{
+#btn-login, #btn-register{
 	background-color: #ff5353;
 }
 .login-box-footer a{
