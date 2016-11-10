@@ -15,5 +15,9 @@ app.config(function($routeProvider, $locationProvider)
 		templateUrl:'app/dashboard/dashboard.html',
 		controller:'dashboardCtrl',
 	})
+	.when('/location',{
+		templateUrl:'app/location/location.html',
+		controller:'locationCtrl',
+	})
 	.otherwise ({ redirectTo: '/' });
 });
