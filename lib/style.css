@@ -62,3 +62,7 @@ h2 {
 img{
 	width: 100%;
 }
+.img-container{
+	height: 400px;
+	overflow: hidden;
+}

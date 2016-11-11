@@ -3,7 +3,7 @@ angular.module('app').controller('dashboardCtrl', function($rootScope, $scope, $
 		map: 'world_mill',
 		backgroundColor: '#aad8b0',
 		onRegionClick: function(event, region){
-			$scope.region=region;
+			$rootScope.region=region;
 			$location.path('/location');
 		  	$scope.$apply();
 		}
